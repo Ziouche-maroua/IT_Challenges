@@ -1,1 +1,0 @@
-MicroCTF{Vincent van Gogh_Museum of Modern Art (MoMA)}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        h4 {
+            font-size: 1.5em;
+            color: #34495e;
+        }
+        #weather {
+            font-size: 1.5em;
+            color: #2ecc71;
+            font-weight: bold;
+            display: none;
+        }
+        #weatherCard {
+            margin-top: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #weatherCard div {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        #weatherCard div span {
+            font-weight: bold;
+        }
+        #weatherCard h2 {
+            font-size: 2em;
+            color: #3498db;
+        }
+        #main {
+            color: #e74c3c;
+            font-size: 1.8em;
+        }
+        #description {
+            font-size: 1.3em;
+            color: #95a5a6;
+        }
+        .temperature {
+            font-size: 1.5em;
+            color: #f39c12;
+        }
+        .details {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        .loading {
+            font-size: 1.5em;
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to this simple smooth website ^^</h1>
+    <h4>Weather of the current day:</h4>
+    <div id="weather" class="loading">Loading...</div>
+
+    <div id="weatherCard">
+        <h2>Current Weather</h2>
+        <div id="main"></div>
+        <div id="description"></div>
+        <div id="temp" class="temperature"></div>
+        <div id="feelsLike" class="temperature"></div>
+        <div id="tempMin" class="details"></div>
+        <div id="tempMax" class="details"></div>
+        <div id="humidity" class="details"></div>
+        <div id="pressure" class="details"></div>
+    </div>
+    
+    <!-- Use Axios from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>

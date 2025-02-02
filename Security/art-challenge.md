@@ -26,5 +26,6 @@ We were given an artwork and asked to find both the painter's name and the artwo
 
 ### Flag
 The flag was constructed using the required format with the artwork and painter information.
+[Flag is in the file secondChallenge.txt ]
 
 
